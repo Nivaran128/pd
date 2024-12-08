@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Plant Identifier</title>
@@ -13,7 +14,7 @@
     <p id="benefits"></p>
     <script>
         async function loadModel() {
-            const model = await tf.loadLayersModel('https://nivaran128.github.io/pd/model/model.json');
+            const model = await tf.loadLayersModel(' https://nivaran128.github.io/pd/model.json');
             document.getElementById('imageInput').onchange = async function (event) {
                 const file = event.target.files[0];
                 const img = document.createElement('img');
